@@ -71,7 +71,7 @@ body {
   width: 4px;
   height: 4px;
   background-color: var(--neon-blue);
-  border-radius: 50%;
+  border-radius: 30%;
   transform: translateZ(0);
 }
 
