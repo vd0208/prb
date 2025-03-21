@@ -257,7 +257,7 @@ body {
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
-  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(230, 0, 255, 0.5), 0 0 30px rgba(0, 255, 72, 0.3);
+  text-shadow: 0 0 10px rgb(187, 0, 255), 0 0 20px rgba(234, 255, 0, 0.912), 0 0 30px rgba(0, 255, 72, 0.3);
   animation: glitch 3s infinite;
 }
 
