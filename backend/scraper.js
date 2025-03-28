@@ -18,11 +18,11 @@ function analyzeSentimentVADER(text) {
 async function searchAmazonProducts(query) {
     console.log(`🔹 Searching Amazon for: ${query}`);
 
-    const apiUrl = "https://amazon-online-data-api.p.rapidapi.com/search?query=crocs&page=1&geo=IN";  
+    const apiUrl = "https://real-time-product-search.p.rapidapi.com/product-details-v2?product_id=catalogid%3A15554707778408471208%2Cgpcid%3A6219277726645206819%2CheadlineOfferDocid%3A8835386203856143595%2Crds%3APC_15478400683365031707%7CPROD_PC_15478400683365031707%2CimageDocid%3A10653897321817113741%2Cmid%3A576462815432560445%2Cpvt%3Ahg%2Cpvf%3A&country=IN&language=en";  
 
     const headers = {
         "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,  
-        "X-RapidAPI-Host": "real-time-amazon-data.p.rapidapi.com"
+        "X-RapidAPI-Host": " real-time-product-search.p.rapidapi.com"
     };
 
     try {
