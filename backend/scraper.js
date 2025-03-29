@@ -22,7 +22,7 @@ async function searchAmazonProducts(query) {
 
     const headers = {
         "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,  
-        "X-RapidAPI-Host": " real-time-product-search.p.rapidapi.com"
+        "X-RapidAPI-Host": " real-time-amazon-data.p.rapidapi.com"
     };
 
     try {
