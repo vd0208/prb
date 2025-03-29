@@ -18,7 +18,7 @@ function analyzeSentimentVADER(text) {
 async function searchAmazonProducts(query) {
     console.log(`🔹 Searching Amazon for: ${query}`);
 
-    const apiUrl = "https://real-time-product-search.p.rapidapi.com/product-details-v2?product_id=catalogid%3A15554707778408471208%2Cgpcid%3A6219277726645206819%2CheadlineOfferDocid%3A8835386203856143595%2Crds%3APC_15478400683365031707%7CPROD_PC_15478400683365031707%2CimageDocid%3A10653897321817113741%2Cmid%3A576462815432560445%2Cpvt%3Ahg%2Cpvf%3A&country=IN&language=en";  
+    const apiUrl = "https://real-time-amazon-data.p.rapidapi.com/search?query=Phone&page=1&countryIN&sort_by=RELEVANCE&product_condition=ALL&is_prime=false&deals_and_discounts=NONE";  
 
     const headers = {
         "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,  
@@ -66,7 +66,7 @@ async function fetchAmazonProductReviews(asin, rating) {
 
     console.log(`🔹 Fetching Amazon reviews for ASIN: ${asin}`);
 
-    const apiUrl = "https://amazon-online-data-api.p.rapidapi.com/v2/product-reviews?geo=IN&page=1&asin=B09J713ZS7&filter_by_star=5&media_reviews_only=false";
+    const apiUrl = "https://real-time-amazon-data.p.rapidapi.com/product-reviews?asin=B07ZPKN6YR&country=IN&page=1&sort_by=TOP_REVIEWS&star_rating=ALL&verified_purchases_only=false&images_or_videos_only=false&current_format_only=false";
     const headers = {
         "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,  
         "X-RapidAPI-Host": "real-time-amazon-data.p.rapidapi.com"
